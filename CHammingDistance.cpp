@@ -19,7 +19,7 @@
  *        -1 if strings are not equal in length
  */
 
-int CHammingDistance::CalculateHammingDistance(std::string str, std::string str1)
+int CHammingDistance::CalculateHammingDistance(std::string& str, std::string& str1)
 {
     if (str.length() !=str1.length()){
         std::cout << "Please enter two strings of equal length " ;
