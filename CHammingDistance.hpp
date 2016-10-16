@@ -14,7 +14,7 @@
 #include <iostream>
 class CHammingDistance {
 public:
-    int CalculateHammingDistance(std::string str, std::string str1);
+    int CalculateHammingDistance(std::string& str, std::string& str1);
 private:
 
 };
