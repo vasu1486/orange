@@ -65,3 +65,16 @@ BOOST_AUTO_TEST_CASE(test5) {
     int dist = hammingDistnce.CalculateHammingDistance(str1, str2);
     BOOST_REQUIRE_EQUAL(dist, 0);  
 }
+
+
+/**
+ *  A Test case to compare two  strings of equal lengths
+ */
+BOOST_AUTO_TEST_CASE(test6) {
+    CHammingDistance hammingDistnce;
+    const char * myArray[2] = { "0x00", "0x01"};
+    std::string str1(myArray[0]);
+    std::string str2(myArray[1]);
+    int dist = hammingDistnce.CalculateHammingDistance(str1, str2);
+    BOOST_REQUIRE_EQUAL(dist, 1);  
+}
